@@ -1,0 +1,36 @@
+digraph Tree {
+node [shape=box] ;
+0 [label="PPE <= 0.1351\nentropy = 0.8351\nsamples = 128\nvalue = [34, 94]\nclass = No"] ;
+1 [label="Shimmer:APQ5 <= 0.0059\nentropy = 0.6962\nsamples = 32\nvalue = [26, 6]\nclass = Yes"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+9 [label="entropy = 0.0\nsamples = 3\nvalue = [0, 3]\nclass = No"] ;
+1 -> 9 ;
+10 [label="D2 <= 2.4484\nentropy = 0.4798\nsamples = 29\nvalue = [26, 3]\nclass = Yes"] ;
+1 -> 10 ;
+11 [label="entropy = 0.0\nsamples = 22\nvalue = [22, 0]\nclass = Yes"] ;
+10 -> 11 ;
+12 [label="DFA <= 0.6918\nentropy = 0.9852\nsamples = 7\nvalue = [4, 3]\nclass = Yes"] ;
+10 -> 12 ;
+13 [label="entropy = 0.0\nsamples = 4\nvalue = [4, 0]\nclass = Yes"] ;
+12 -> 13 ;
+14 [label="entropy = 0.0\nsamples = 3\nvalue = [0, 3]\nclass = No"] ;
+12 -> 14 ;
+2 [label="Shimmer:APQ5 <= 0.0127\nentropy = 0.4138\nsamples = 96\nvalue = [8, 88]\nclass = No"] ;
+0 -> 2 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+3 [label="MDVP:Fo(Hz) <= 117.9865\nentropy = 0.8113\nsamples = 32\nvalue = [8, 24]\nclass = No"] ;
+2 -> 3 ;
+5 [label="Jitter:DDP <= 0.0081\nentropy = 0.8113\nsamples = 8\nvalue = [6, 2]\nclass = Yes"] ;
+3 -> 5 ;
+15 [label="entropy = 0.0\nsamples = 6\nvalue = [6, 0]\nclass = Yes"] ;
+5 -> 15 ;
+16 [label="entropy = 0.0\nsamples = 2\nvalue = [0, 2]\nclass = No"] ;
+5 -> 16 ;
+6 [label="Shimmer:APQ3 <= 0.0117\nentropy = 0.4138\nsamples = 24\nvalue = [2, 22]\nclass = No"] ;
+3 -> 6 ;
+7 [label="entropy = 0.0\nsamples = 22\nvalue = [0, 22]\nclass = No"] ;
+6 -> 7 ;
+8 [label="entropy = 0.0\nsamples = 2\nvalue = [2, 0]\nclass = Yes"] ;
+6 -> 8 ;
+4 [label="entropy = 0.0\nsamples = 64\nvalue = [0, 64]\nclass = No"] ;
+2 -> 4 ;
+}
